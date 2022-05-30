@@ -1,0 +1,12 @@
+.database-titles {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    align-items: center;
+}
+
+.main {
+    display: flex;
+}

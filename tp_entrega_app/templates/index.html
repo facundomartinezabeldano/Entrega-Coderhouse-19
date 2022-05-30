@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega Python</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="title" style="text-align:center; background-color:goldenrod;font-family: sans-serif;">Entrega Python
+        </h1>
+        <h4 class="title" style="text-align:center; background-color:goldenrod;font-family: sans-serif;">Resultado Base
+            de Datos:</h4>
+        <div style="display:flex; justify-content: space-evenly;" class=" database-titles">
+            <h4 style="width: 300px;height: 50px; background-color: darkkhaki; text-align: center; vertical-align: middle; line-height: 40px;font-family: sans-serif;"
+                class="header">
+                Nombre</h4>
+            <h4 style="width: 300px;height: 50px; background-color: darkkhaki; text-align: center; vertical-align: middle; line-height: 40px;font-family: sans-serif;"
+                class="header">Edad
+            </h4>
+            <h4 style="width: 300px;height: 50px; background-color: darkkhaki; text-align: center; vertical-align: middle; line-height: 40px;font-family: sans-serif;"
+                class="header">Fecha
+                de nacimiento</h4>
+        </div>
+        {% for i in db_payload%}
+        <div style="display: grid; grid-template-columns:500px 500px 500px;">
+            <h4
+                style="text-align: center; margin-right:150px; margin-left: 50px; background-color:green; height: 30px;font-family: sans-serif;">
+                {{i.name}}
+            </h4>
+            <h4
+                style="text-align: center; margin-right:150px; margin-left: 50px; background-color:green; height: 30px;font-family: sans-serif;">
+                {{i.age}}
+            </h4>
+            <h4
+                style="text-align: center; margin-right:150px; margin-left: 50px; background-color:green; height: 30px;font-family: sans-serif;">
+                {{i.birth_date}}
+            </h4>
+        </div>
+        {%endfor%}
+        <h1 style="text-align: center; background-color: red;font-family: sans-serif;">MUERTE AL EL CSS ES MUY DIFICIL
+            Y NO LO ENTIENDO</h1>
+        <h6 style="text-align: center; background-color:cadetblue;font-family: sans-serif;">made by facu © all rights
+            reserved 2022</h6>
+
+</body>
+
+</html>
